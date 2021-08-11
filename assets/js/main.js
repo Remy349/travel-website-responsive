@@ -150,3 +150,26 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem("selected-icon", getCurrentIcon())
 })
 
+/* SCROLL REVEAL ANIMATION */
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 2800,
+    // reset: true
+}) 
+
+sr.reveal(`.home-data, .home-social-link, .home-info,
+        .discover-container, .experience-data, .experience-overlay,
+        .place-card, .sponsor-content, .footer-data, .footer-rights`, {
+    origin: 'top',
+    interval: 100
+})
+
+sr.reveal(".about-data, .video-description, .subscribe-description", {
+    origin: 'left',
+})
+
+sr.reveal('.about-img-overlay, .video-content, .subscribe-form', {
+    origin: 'right',
+    interval: 100
+})
+

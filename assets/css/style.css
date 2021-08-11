@@ -156,6 +156,10 @@ input {
     outline: none;
 }
 
+.main {
+    overflow-x: hidden;
+}
+
 /* REUSABLE CSS CLASSES */
 .section {
     padding: 4.5rem 0 2.5rem;
@@ -1082,9 +1086,21 @@ input {
     }
 }
 
-/* For tall scrrens on mobile and desktop */
+@media screen and (min-width: 1200px) {
+    .container {
+       max-width: 1024px;
+    }
+}
 
+/* For tall screens on mobile and desktop */
+@media screen and (min-height: 721px) {
+    body {
+        margin: 0;
+    }
 
-
-
+    .home-container,
+    .home-img {
+        height: 640px;
+    }
+}
 
